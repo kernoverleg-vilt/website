@@ -30,6 +30,41 @@ theme: minima
 plugins:
   - jekyll-feed
 
+defaults:
+  - scope:
+      path: ""
+      type: members
+    values:
+      name: ""
+      email: ""
+      image: ""
+  - scope:
+      path: ""
+      type: events
+    values:
+      date: "2017-07-01"
+      title: ""
+      image: ""
+  - scope:
+      path: ""
+      type: clubs
+    values:
+      name: ""
+      type: ""
+      address: ""
+      image: ""
+  - scope:
+      path: ""
+      type: groups
+    values:
+      name: ""
+
+collections:
+  - members
+  - events
+  - clubs
+  - groups
+
 # Server settings
 port: 5000
 
